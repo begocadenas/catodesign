@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>catodesign</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../assets/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./../assets/favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container">
+            <a class="cato" href="./../index.html"><img class="tipo" src="./../assets/img/tipologo.png" alt="CATO DESIGN"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" id="ir" href="./../proyectos/proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="ir" href="./../noticias/noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="ir" href="./../contacto/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="ir-act" href="./formulario.html">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="formulario">
+        <form action="./proceso_registro.php" method="POST">
+            <h1>Regístrate</h1>
+            <p>¡Regístrate ahora y recibe todas las novedades en noticias y productos!</p>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="fname" name="nombre" placeholder="Write here">
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="lname" name="apellidos" placeholder="Write here">
+
+            <label for="email">Email:</label>
+            <input type="email" id="mail" name="email" placeholder="Email">
+
+            <br>
+            <br>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">He leído y acepto todas las condiciones</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Acepto todas las Cookies</label>
+            </div>
+
+            <input class="send" id ="send" type="submit" value="Registrarme">
+        </form>
+
+        <div class="mesage">
+            <h1>¡Regístrate y disfruta!</h1>
+            <button class="cerrar" id="btn-close">X</button>
+        </div>
+    </section>
+    <div class="textos-legales">
+        <a class="nav-link" id="texto-legal" href="./../textos legales/legal.html" target="_blank">Aviso Legal</a>
+        <h>|</h>
+        <a class="nav-link" id="texto-legal" href="./../textos legales/cookies.html" target="_blank">Política de Cookies</a>
+        <h>|</h>
+        <a class="nav-link" id="texto-legal" href="./../textos legales/privacidad.html" target="_blank">Política de Privacidad</a>
+    </div>
+
+    <script src="./assets/jquery.js"></script>
+    <script src="./assets/acciones.js"></script>
+
+</body>
+
+</html>
